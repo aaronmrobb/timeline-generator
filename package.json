@@ -1,0 +1,28 @@
+{
+  "name": "timeline-generator",
+  "version": "1.0.0",
+  "description": "Historical timeline parser.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronmrobb/timeline-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aaronmrobb/timeline-generator/issues"
+  },
+  "homepage": "https://github.com/aaronmrobb/timeline-generator#readme",
+  "dependencies": {
+    "koa": "^1.2.0",
+    "koa-router": "^5.4.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "sinon": "^1.17.3"
+  }
+}
