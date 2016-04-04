@@ -11,5 +11,7 @@ request
       console.log(err)
     }
     const stripped = R.replace(/(<script(\s|\S)*?<\/script>)|(<style(\s|\S)*?<\/style>)|(<!--(\s|\S)*?-->)|(<\/?(\s|\S)*?>)/g,'', data.text)
-    console.log(R.split('.', stripped))
+    const sentences = R.split('.', stripped)
+    const noBreaks = R.map(R.replace(/(?:\r\n|\r|\n|\t)/g, ''), sentences)
+    console.log(noBreaks)
   })
